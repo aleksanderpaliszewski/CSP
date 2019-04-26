@@ -1,9 +1,5 @@
 language: python
 
-before_script:
-  - pip uninstall numpy -y
-  - pip install -I numpy==1.8.2
-
 python:
   - "3.6"
 
