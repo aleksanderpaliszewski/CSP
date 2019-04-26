@@ -256,9 +256,11 @@ def rec2(matrix, valM, cons, row, col, minus, max):
     count = countValues(matrix)
     consItem = checkCons(matrix, cons, row, col)
     consItem = consItem[minus:]
+
     if first%10000 == 0:
         print(first)
-    elif flaga:
+
+    if flaga:
         return
     elif len(consItem) == 0:
         first += 1
@@ -290,7 +292,8 @@ def rec3(matrix, valM, cons, row, col, minus, max):
 
     if second % 10000 == 0:
         print(second)
-    elif flaga2:
+
+    if flaga2:
         return
     elif findEmpty2(matrix, cons):
         second += 1
