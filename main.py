@@ -2,15 +2,16 @@ import numpy as np
 import time
 import os
 import itertools
+from multiprocessing import Process
 
 
 futoshiki = []
 first = 0
-second = 0
+returns = 0
 third = 0
 loadTime = 0
 loadTime2 = 0
-flaga = False
+flag = False
 flaga2 = False
 
 
@@ -212,7 +213,7 @@ def rec(matrix, valM, cons, row, col, minus):
 
 
 def recFC(matrix, valM, cons, row, col, minus):
-    global second, loadTime, flaga
+    global returns, loadTime, flag
     height = len(matrix) - 1
     width = len(matrix[0]) - 1
     consItem = checkCons(matrix, cons, row, col)
@@ -252,7 +253,7 @@ def recFC(matrix, valM, cons, row, col, minus):
 
 
 def rec2(matrix, valM, cons, row, col, minus, max):
-    global first, flaga
+    global first, flag
     count = countValues(matrix)
     consItem = checkCons(matrix, cons, row, col)
     consItem = consItem[minus:]
@@ -285,7 +286,7 @@ def rec2(matrix, valM, cons, row, col, minus, max):
 
 
 def rec3(matrix, valM, cons, row, col, minus, max):
-    global second, flaga2
+    global returns, flaga2
     count = countValues(matrix)
     consItem = checkCons(matrix, cons, row, col)
     consItem = consItem[minus:]
@@ -328,11 +329,11 @@ def setFirst():
 
 
 def setSecond():
-    global second
+    global returns
     second = 0
 
 def setFlag():
-    global flaga
+    global flag
     flaga = False
 
 
@@ -344,7 +345,7 @@ def setFlag2():
 def BT():
     entries = sorted(os.listdir('./Futoshiki'))
     for entry in entries:
-        global second
+        global returns
         setGlobar()
         setFirst()
         setFlag()
@@ -359,7 +360,7 @@ def BT():
 def FC():
     entries = sorted(os.listdir('./Futoshiki'))
     for entry in entries:
-        global second
+        global returns
         print()
         setGlobar()
         setSecond()
