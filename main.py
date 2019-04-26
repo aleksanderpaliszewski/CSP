@@ -15,7 +15,7 @@ flaga2 = False
 
 
 def fileReader(text):
-    filename = "/Users/aleksanderpaliszewski/Desktop/SI/Lab2/Futoshiki/" + text
+    filename = "./Futoshiki/" + text
     lines, matrix, cons = [], [], []
     with open(filename) as f:
         lines.extend(f.readlines())
