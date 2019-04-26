@@ -2,7 +2,7 @@ import numpy as np
 import time
 import os
 import itertools
-from multiprocessing import Process
+
 
 futoshiki = []
 first = 0
@@ -366,9 +366,5 @@ def FC():
 
 
 if __name__ == '__main__':
-    p1 = Process(target=FC)
-    p1.start()
-    p2 = Process(target=BT)
-    p2.start()
-    p1.join()
-    p2.join()
+    FC()
+    BT()
