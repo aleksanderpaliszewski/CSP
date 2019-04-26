@@ -288,7 +288,7 @@ def rec3(matrix, valM, cons, row, col, minus, max):
     consItem = checkCons(matrix, cons, row, col)
     consItem = consItem[minus:]
 
-    if first % 10000 == 0:
+    if second % 10000 == 0:
         print first
     elif flaga2:
         return
