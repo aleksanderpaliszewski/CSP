@@ -1,9 +1,8 @@
 import time
 import os
-import itertools
 from fileReader import fileReader
 from futoConstraints import checkCons
-
+from matrices import valuesInMatrix, findEmpty
 
 flag = False
 returns = 0
@@ -17,44 +16,6 @@ def setCounter():
 def setFlag():
     global flag
     flag = False
-
-
-def valuesInMatrix(matrix):
-    values = []
-    for x, y in itertools.product(range(len(matrix)), range(len(matrix))):
-        if int(matrix[x][y]) > 0:
-            values.append([x, y])
-    return values
-
-
-def countValues(matrix):
-    values = 0
-    for x, y in itertools.product(range(len(matrix)), range(len(matrix))):
-        if int(matrix[x][y]) > 0:
-            values += 1
-    return values
-
-
-def findConCell(matrix, cons):
-    x, y = len(matrix) + 1, len(matrix) + 1
-    minCons = len(matrix)
-    for row, col in itertools.product(range(len(matrix)), range(len(matrix))):
-        constraints = len(checkCons(matrix, cons, row, col))
-        if minCons > constraints > 0 and int(matrix[row][col]) == 0:
-            minCons = constraints
-            x = row
-            y = col
-    return x, y
-
-
-def findEmpty(matrix, cons, x, y):
-    for i, j in itertools.product(range(x, len(matrix)), range(y, len(matrix))):
-        if int(matrix[i][j]) != 0:
-            return
-        else:
-            if len(checkCons(matrix, cons, i, j)) == 0:
-                return True
-    return False
 
 
 def skipValue(matrix, valM, cons, row, col, width, height):
