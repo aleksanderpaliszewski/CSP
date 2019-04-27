@@ -1,9 +1,7 @@
 language: python
+
 python:
   - "3.6"
-env:
-    matrix:
-      - TARGET="FC"
-      - TARGET="FCH"
+
 script:
-    - make $TARGET
+  - python FCH.py
