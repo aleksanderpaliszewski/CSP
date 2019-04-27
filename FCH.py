@@ -1,7 +1,8 @@
-import numpy as np
 import time
 import os
 import itertools
+from fileReader import fileReader
+from futoCons import checkCons
 
 
 flag = False
@@ -16,43 +17,6 @@ def setCounter():
 def setFlag():
     global flag
     flag = False
-
-
-
-def fileReader(text):
-    filename = "./Futoshiki/" + text
-    lines, matrix, cons = [], [], []
-    with open(filename) as f:
-        lines.extend(f.readlines())
-    dim = int(lines[0])
-    for x in lines[2:dim + 2]:
-        matrix.extend(x.replace("\n", "").split(";"))
-    for x in lines[dim + 3:len(lines)]:
-        cons.extend(x.replace("\n", "").split(";"))
-    cons = toLetters(cons)
-    matrix = np.reshape(matrix, (dim, dim))
-    y = matrix.astype(np.float)
-
-    return y, cons
-
-
-def regCons(matrix, x, y):
-    capabilities = list(range(1, len(matrix) + 1))
-    for cell in matrix[x]:
-        if int(cell) > 0 and (int(cell) in capabilities):
-            capabilities.remove(int(cell))
-    for cell in matrix:
-        if int(cell[y]) > 0 and (int(cell[y]) in capabilities):
-            capabilities.remove(int(cell[y]))
-    return capabilities
-
-
-def connCons(cons, x, y):
-    newCons = []
-    for element in cons:
-        if element[0] == str(x) + str(y) or element[1] == str(x) + str(y):
-            newCons.extend([element[0], element[1]])
-    return newCons
 
 
 def valuesInMatrix(matrix):
@@ -71,63 +35,16 @@ def countValues(matrix):
     return values
 
 
-def fileCons(matrix, cons, valList, x, y):
-    for element in range(0, len(cons)):
-        if cons[element] == str(x) + str(y):
-            if element % 2 == 0:
-                conX = cons[element + 1][0]
-                conY = cons[element + 1][1]
-                secondValue = int(matrix[int(conX)][int(conY)])
-                if secondValue > 0:
-                    valList = takeSmaller(valList, secondValue)
-            else:
-                conX = cons[element - 1][0]
-                conY = cons[element - 1][1]
-                secondValue = int(matrix[int(conX)][int(conY)])
-                if secondValue > 0:
-                    valList = takeBigger(valList, secondValue)
-    return valList
-
-
-def takeSmaller(valList, value):
-    smallerValues = []
-    for element in valList:
-        if element < value:
-            smallerValues.append(element)
-    return smallerValues
-
-
-def takeBigger(valList, value):
-    biggerValues = []
-    for element in valList:
-        if element > value:
-            biggerValues.append(element)
-    return biggerValues
-
-
-def toLetters(valList):
-    for char in valList:
-        if len(char)>0 and char[0].isalpha():
-            valList[valList.index(char)] = str(ord(char[0]) - 65) + str(int(char[1]) - 1)
-    return valList
-
-
-def checkCons(matrix, cons, row, col):
-    valList = regCons(matrix, row, col)
-    conCons = connCons(np.reshape(cons, (int(len(cons) / 2), 2)), row, col)
-    consItem = fileCons(matrix, conCons, valList, row, col)
-    return consItem
-
-
 def findConCell(matrix, cons):
     x, y = len(matrix) + 1, len(matrix) + 1
     minCons = len(matrix)
     for row, col in itertools.product(range(len(matrix)), range(len(matrix))):
-        constraints = len(checkCons(matrix, cons, row, col))
-        if minCons > constraints > 0 and int(matrix[row][col]) == 0:
-            minCons = constraints
-            x = row
-            y = col
+        if int(matrix[row][col]) == 0:
+            constraints = len(checkCons(matrix, cons, row, col))
+            if minCons > constraints > 0:
+                minCons = constraints
+                x = row
+                y = col
     return x, y
 
 
@@ -136,43 +53,42 @@ def findEmptyH(matrix, cons):
         if int(matrix[i][j]) != 0:
             pass
         else:
-            constraints = len(checkCons(matrix, cons, i, j))
-            if constraints == 0:
+            if len(checkCons(matrix, cons, i, j)) == 0:
                 return True
     return False
 
 
-def recFCH(matrix, valM, cons, row, col, minus, max):
+def itemSet(matrix, cons, row, col, minus, max, consItem):
+    matrix.itemset((row, col), consItem)
+    newRow, newCol = findConCell(matrix, cons)
+    if newRow >= len(matrix):
+        matrix.itemset((row, col), 0)
+    else:
+        recFCH(matrix, cons, newRow, newCol, 0, max)
+        matrix.itemset((row, col), 0)
+        recFCH(matrix, cons, row, col, minus + 1, max)
+
+
+def recFCH(matrix, cons, row, col, minus, max):
     global returns, flag
     count = countValues(matrix)
     consItem = checkCons(matrix, cons, row, col)
     consItem = consItem[minus:]
 
-    if returns % 20000 == 0:
+    if returns % 20000 == 0 and returns != 0:
         print(returns)
 
     if flag:
         return
     elif findEmptyH(matrix, cons):
         returns += 1
-        return
     elif len(consItem) == 0:
         returns += 1
-        return
     elif count == max - 1:
-        matrix.itemset((row, col), consItem[0])
         flag = True
-        return
-    else:
         matrix.itemset((row, col), consItem[0])
-        newRow, newCol = findConCell(matrix, cons)
-        if newRow >= len(matrix):
-            matrix.itemset((row, col), 0)
-            return
-        else:
-            recFCH(matrix, valM, cons, newRow, newCol, 0, max)
-            matrix.itemset((row, col), 0)
-            recFCH(matrix, valM, cons, row, col, minus + 1, max)
+    else:
+        itemSet(matrix, cons, row, col, minus, max, consItem[0])
 
 
 def FCStart():
@@ -182,9 +98,8 @@ def FCStart():
         setCounter()
         setFlag()
         matrix, cons = fileReader(entry)
-        valuesInMatrix1 = valuesInMatrix(matrix)
         start_time = time.time()
-        recFCH(matrix, valuesInMatrix1, cons, 0, 0, 0, len(matrix)*len(matrix))
+        recFCH(matrix, cons, 0, 0, 0, len(matrix)*len(matrix))
         print("File = ", entry, " returns = ", str(returns), " Time = %s seconds CSP = FC" % (time.time() - start_time))
 
 
