@@ -3,7 +3,5 @@ language: python
 python:
   - "3.6"
 
-before_script: cd Futoshiki
-
 script:
   - python FCH.py

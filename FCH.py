@@ -1,9 +1,8 @@
 import time
 import os
-from Futoshiki.fileReader import fileReader
-from Futoshiki.futoConstraints import checkCons
-from matrices import findConCell, countValues
-
+from fileReader import fileReader
+from futoConstraints import checkCons
+from matrices import findEmptyH, findConCell, countValues
 
 flag = False
 returns = 0
@@ -25,44 +24,45 @@ def itemSet(matrix, cons, row, col, minus, max, consItem):
     if newRow >= len(matrix):
         matrix.itemset((row, col), 0)
     else:
-        recBTH(matrix, cons, newRow, newCol, 0, max)
+        recFCH(matrix, cons, newRow, newCol, 0, max)
         matrix.itemset((row, col), 0)
-        recBTH(matrix, cons, row, col, minus + 1, max)
+        recFCH(matrix, cons, row, col, minus + 1, max)
 
 
-def recBTH(matrix, cons, row, col, minus, max):
+def recFCH(matrix, cons, row, col, minus, max):
     global returns, flag
     count = countValues(matrix)
     consItem = checkCons(matrix, cons, row, col)
     consItem = consItem[minus:]
 
-    # if returns%10000 == 0:
-    #     print(returns)
+    if returns % 20000 == 0 and returns != 0:
+        print(returns)
 
     if flag:
         return
+    elif findEmptyH(matrix, cons):
+        returns += 1
     elif len(consItem) == 0:
         returns += 1
-        return
     elif count == max - 1:
-        matrix.itemset((row, col), consItem[0])
         flag = True
-        return
+        matrix.itemset((row, col), consItem[0])
     else:
         itemSet(matrix, cons, row, col, minus, max, consItem[0])
 
 
-def BTStart():
-    entries = sorted(os.listdir('./FutoshikiTestFiles'))
+def FCStart():
+    entries = sorted(os.listdir('./FutoshikiTestFiles/'))
+    print(entries)
     for entry in entries:
         global returns
         setCounter()
         setFlag()
         matrix, cons = fileReader(entry)
         start_time = time.time()
-        recBTH(matrix, cons, 0, 0, 0, len(matrix) * len(matrix))
+        recFCH(matrix, cons, 0, 0, 0, len(matrix)*len(matrix))
         print("File = ", entry, " returns = ", str(returns), " Time = %s seconds CSP = FC" % (time.time() - start_time))
 
 
 if __name__ == '__main__':
-    BTStart()
+    FCStart()

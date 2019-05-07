@@ -1,7 +1,7 @@
 import time
 import os
-from Futoshiki.fileReader import fileReader
-from Futoshiki.futoConstraints import checkCons
+from fileReader import fileReader
+from futoConstraints import checkCons
 from matrices import valuesInMatrix
 
 

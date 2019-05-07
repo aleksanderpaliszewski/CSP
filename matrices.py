@@ -1,5 +1,5 @@
 import itertools
-from Futoshiki.futoConstraints import checkCons
+from futoConstraints import checkCons
 
 
 def valuesInMatrix(matrix):

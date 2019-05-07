@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70cdca75-c053-49a4-b223-53ec4fe0ece6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/FCH.py" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FCH.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/BT.py" beforeDir="false" afterPath="$PROJECT_DIR$/BT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/BTH.py" beforeDir="false" afterPath="$PROJECT_DIR$/BTH.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FC.py" beforeDir="false" afterPath="$PROJECT_DIR$/FC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FCH.py" beforeDir="false" afterPath="$PROJECT_DIR$/FCH.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_4_0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_4_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_4_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_5_0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_5_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_5_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_6_0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_6_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_6_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_7_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_7_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_8_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/fileReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileReader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/futoConstraints.py" beforeDir="false" afterPath="$PROJECT_DIR$/futoConstraints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/matrices.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,21 +35,21 @@
     <SUITE FILE_PATH="coverage/lab2$BTH.coverage" NAME="BTH Coverage Results" MODIFIED="1556368661569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab2$BT.coverage" NAME="BT Coverage Results" MODIFIED="1556368499707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab2$FCH.coverage" NAME="FCH Coverage Results" MODIFIED="1556368371577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSP$FCH.coverage" NAME="FCH Coverage Results" MODIFIED="1557215568409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSP$FCH.coverage" NAME="FCH Coverage Results" MODIFIED="1557216425860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            <state relative-caret-position="84">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Futoshiki/FC.py">
+        <entry file="file://$PROJECT_DIR$/FC.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
               <caret line="78" column="13" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="13" />
@@ -54,7 +73,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Futoshiki/BT.py">
+        <entry file="file://$PROJECT_DIR$/BT.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
               <caret line="75" column="13" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="13" />
@@ -66,19 +85,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Futoshiki/BTH.py">
+        <entry file="file://$PROJECT_DIR$/BTH.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-115">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="29" />
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Futoshiki/FCH.py">
+        <entry file="file://$PROJECT_DIR$/FCH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+            <state relative-caret-position="113">
+              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -87,7 +106,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Futoshiki/futoConstraints.py">
+        <entry file="file://$PROJECT_DIR$/futoConstraints.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="117">
               <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
@@ -96,10 +115,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Futoshiki/fileReader.py">
+        <entry file="file://$PROJECT_DIR$/fileReader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            <state relative-caret-position="84">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -135,18 +154,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/fileReader.py" />
         <option value="$PROJECT_DIR$/futoCons.py" />
         <option value="$PROJECT_DIR$/FC.py" />
-        <option value="$PROJECT_DIR$/FCH.py" />
         <option value="$PROJECT_DIR$/BT.py" />
         <option value="$PROJECT_DIR$/BTH.py" />
         <option value="$PROJECT_DIR$/Futoshiki/BT.py" />
         <option value="$PROJECT_DIR$/matrices.py" />
         <option value="$PROJECT_DIR$/Futoshiki/fileReader.py" />
         <option value="$PROJECT_DIR$/Futoshiki/futoConstraints.py" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/Futoshiki/FCH.py" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/fileReader.py" />
+        <option value="$PROJECT_DIR$/FCH.py" />
       </list>
     </option>
   </component>
@@ -187,9 +206,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Futoshiki" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Futoshiki" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -219,7 +240,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Futoshiki/BT.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BT.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,7 +262,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Futoshiki/BTH.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BTH.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,7 +284,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Futoshiki/FC.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FC.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,7 +306,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Futoshiki/FCH.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FCH.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -314,16 +335,15 @@
       <option name="presentableId" value="Default" />
       <updated>1556267420016</updated>
       <workItem from="1556267421960" duration="8669000" />
-      <workItem from="1557213600435" duration="2178000" />
+      <workItem from="1557213600435" duration="2678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10847000" />
+    <option name="totallyTimeSpent" value="11347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -353,7 +373,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py" />
-    <entry file="file://$PROJECT_DIR$/Futoshiki/BT.py">
+    <entry file="file://$PROJECT_DIR$/BT.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="75" column="13" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="13" />
@@ -370,21 +390,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Futoshiki/fileReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Futoshiki/futoConstraints.py">
+    <entry file="file://$PROJECT_DIR$/futoConstraints.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Futoshiki/FC.py">
+    <entry file="file://$PROJECT_DIR$/FC.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="78" column="13" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="13" />
@@ -404,24 +417,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Futoshiki/BTH.py">
+    <entry file="file://$PROJECT_DIR$/BTH.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-115">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="29" />
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Futoshiki/FCH.py">
+    <entry file="file://$PROJECT_DIR$/fileReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        <state relative-caret-position="84">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FCH.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
