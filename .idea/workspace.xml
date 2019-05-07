@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70cdca75-c053-49a4-b223-53ec4fe0ece6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/BT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BTH.py" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/BTH.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FC.py" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FC.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FCH.py" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FCH.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_4_0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_4_0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_4_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_4_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_4_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_4_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_5_0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_5_0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_5_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_5_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_5_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_5_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_6_0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_6_0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_6_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_6_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_6_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_6_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_7_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_7_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_7_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_7_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Futoshiki/test_futo_8_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FutoshikiTestFiles/test_futo_8_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/fileReader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/futoConstraints.py" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/futoConstraints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrices.py" beforeDir="false" afterPath="$PROJECT_DIR$/matrices.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Futoshiki/FCH.py" beforeDir="false" afterPath="$PROJECT_DIR$/Futoshiki/FCH.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -87,11 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Futoshiki/BTH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="63" column="13" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-115">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -99,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Futoshiki/FCH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+            <state relative-caret-position="292">
+              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -159,7 +137,6 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/fileReader.py" />
         <option value="$PROJECT_DIR$/futoCons.py" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/FC.py" />
         <option value="$PROJECT_DIR$/FCH.py" />
         <option value="$PROJECT_DIR$/BT.py" />
@@ -168,6 +145,7 @@
         <option value="$PROJECT_DIR$/matrices.py" />
         <option value="$PROJECT_DIR$/Futoshiki/fileReader.py" />
         <option value="$PROJECT_DIR$/Futoshiki/futoConstraints.py" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/Futoshiki/FCH.py" />
       </list>
     </option>
@@ -336,23 +314,23 @@
       <option name="presentableId" value="Default" />
       <updated>1556267420016</updated>
       <workItem from="1556267421960" duration="8669000" />
-      <workItem from="1557213600435" duration="1934000" />
+      <workItem from="1557213600435" duration="2178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10603000" />
+    <option name="totallyTimeSpent" value="10847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32923833" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32923833" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -375,27 +353,10 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py" />
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Futoshiki/BT.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="75" column="13" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Futoshiki/BTH.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="63" column="13" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="13" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -443,10 +404,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Futoshiki/BTH.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Futoshiki/FCH.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+        <state relative-caret-position="292">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
