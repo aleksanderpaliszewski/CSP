@@ -11,11 +11,11 @@ def checkCons(matrix, cons, row, col):
 def regCons(matrix, x, y):
     capabilities = list(range(1, len(matrix) + 1))
     for cell in matrix[x]:
-        if int(cell) > 0 and (int(cell) in capabilities):
-            capabilities.remove(int(cell))
+        if cell > 0 and cell in capabilities:
+            capabilities.remove(cell)
     for cell in matrix:
-        if int(cell[y]) > 0 and (int(cell[y]) in capabilities):
-            capabilities.remove(int(cell[y]))
+        if cell[y] > 0 and cell[y] in capabilities:
+            capabilities.remove(cell[y])
     return capabilities
 
 
@@ -31,15 +31,15 @@ def fileCons(matrix, cons, valList, x, y):
     for element in range(0, len(cons)):
         if cons[element] == str(x) + str(y):
             if element % 2 == 0:
-                conX = cons[element + 1][0]
-                conY = cons[element + 1][1]
-                secondValue = int(matrix[int(conX)][int(conY)])
+                conX = int(cons[element + 1][0])
+                conY = int(cons[element + 1][1])
+                secondValue = matrix[conX][conY]
                 if secondValue > 0:
                     valList = takeSmaller(valList, secondValue)
             else:
-                conX = cons[element - 1][0]
-                conY = cons[element - 1][1]
-                secondValue = int(matrix[int(conX)][int(conY)])
+                conX = int(cons[element - 1][0])
+                conY = int(cons[element - 1][1])
+                secondValue = matrix[conX][conY]
                 if secondValue > 0:
                     valList = takeBigger(valList, secondValue)
     return valList

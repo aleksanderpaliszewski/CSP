@@ -2,7 +2,7 @@ import numpy as np
 
 
 def fileReader(text):
-    filename = "./Futoshiki/" + text
+    filename = "./Futoshiki//FutoshikiTestFiles/" + text
     lines, matrix, cons = [], [], []
     with open(filename) as f:
         lines.extend(f.readlines())
@@ -13,13 +13,12 @@ def fileReader(text):
         cons.extend(x.replace("\n", "").split(";"))
     cons = toLetters(cons)
     matrix = np.reshape(matrix, (dim, dim))
-    y = matrix.astype(np.float)
-
+    y = matrix.astype(np.int)
     return y, cons
 
 
 def toLetters(valList):
     for char in valList:
-        if len(char)>0 and char[0].isalpha():
+        if len(char) > 0 and char[0].isalpha():
             valList[valList.index(char)] = str(ord(char[0]) - 65) + str(int(char[1]) - 1)
     return valList

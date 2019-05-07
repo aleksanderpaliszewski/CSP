@@ -1,11 +1,11 @@
 import itertools
-from futoConstraints import checkCons
+from Futoshiki.futoConstraints import checkCons
 
 
 def valuesInMatrix(matrix):
     values = []
     for x, y in itertools.product(range(len(matrix)), range(len(matrix))):
-        if int(matrix[x][y]) > 0:
+        if matrix[x][y] > 0:
             values.append([x, y])
     return values
 
@@ -13,7 +13,7 @@ def valuesInMatrix(matrix):
 def countValues(matrix):
     values = 0
     for x, y in itertools.product(range(len(matrix)), range(len(matrix))):
-        if int(matrix[x][y]) > 0:
+        if matrix[x][y] > 0:
             values += 1
     return values
 
@@ -23,7 +23,7 @@ def findConCell(matrix, cons):
     minCons = len(matrix)
     for row, col in itertools.product(range(len(matrix)), range(len(matrix))):
         constraints = len(checkCons(matrix, cons, row, col))
-        if minCons > constraints > 0 and int(matrix[row][col]) == 0:
+        if minCons > constraints > 0 and matrix[row][col] == 0:
             minCons = constraints
             x = row
             y = col
@@ -32,7 +32,7 @@ def findConCell(matrix, cons):
 
 def findEmpty(matrix, cons, x, y):
     for i, j in itertools.product(range(x, len(matrix)), range(y, len(matrix))):
-        if int(matrix[i][j]) != 0:
+        if matrix[i][j] != 0:
             pass
         else:
             if len(checkCons(matrix, cons, i, j)) == 0:
@@ -42,7 +42,7 @@ def findEmpty(matrix, cons, x, y):
 
 def findEmptyH(matrix, cons):
     for i, j in itertools.product(range(len(matrix)), range(len(matrix))):
-        if int(matrix[i][j]) != 0:
+        if matrix[i][j] != 0:
             pass
         else:
             if len(checkCons(matrix, cons, i, j)) == 0:

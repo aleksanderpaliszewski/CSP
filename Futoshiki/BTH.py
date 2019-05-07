@@ -1,7 +1,7 @@
 import time
 import os
-from fileReader import fileReader
-from futoConstraints import checkCons
+from Futoshiki.fileReader import fileReader
+from Futoshiki.futoConstraints import checkCons
 from matrices import findConCell, countValues
 
 
@@ -53,7 +53,7 @@ def recBTH(matrix, cons, row, col, minus, max):
 
 
 def BTStart():
-    entries = sorted(os.listdir('./Futoshiki'))
+    entries = sorted(os.listdir('./FutoshikiTestFiles'))
     for entry in entries:
         global returns
         setCounter()

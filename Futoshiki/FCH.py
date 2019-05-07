@@ -1,7 +1,7 @@
 import time
 import os
-from fileReader import fileReader
-from futoConstraints import checkCons
+from Futoshiki.fileReader import fileReader
+from Futoshiki.futoConstraints import checkCons
 from matrices import findEmptyH, findConCell, countValues
 
 flag = False
@@ -52,7 +52,8 @@ def recFCH(matrix, cons, row, col, minus, max):
 
 
 def FCStart():
-    entries = sorted(os.listdir('./Futoshiki'))
+    entries = sorted(os.listdir('./Futoshiki/FutoshikiTestFiles'))
+    print(entries)
     for entry in entries:
         global returns
         setCounter()

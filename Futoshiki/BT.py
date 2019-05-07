@@ -1,7 +1,7 @@
 import time
 import os
-from fileReader import fileReader
-from futoConstraints import checkCons
+from Futoshiki.fileReader import fileReader
+from Futoshiki.futoConstraints import checkCons
 from matrices import valuesInMatrix
 
 
@@ -40,7 +40,7 @@ def rec(matrix, valM, cons, row, col, minus):
         return
     elif [row, col] in valM:
         skipValue(matrix, valM, cons, row, col, width, height)
-    elif int(matrix[row][col]) > 0:
+    elif matrix[row][col] > 0:
         returns += 1
         return
     elif len(consItem) == 0:
@@ -64,7 +64,7 @@ def rec(matrix, valM, cons, row, col, minus):
 
 
 def BTStart():
-    entries = sorted(os.listdir('./Futoshiki'))
+    entries = sorted(os.listdir('./FutoshikiTestFiles'))
     for entry in entries:
         global returns
         setCounter()
