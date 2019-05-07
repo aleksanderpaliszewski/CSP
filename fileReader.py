@@ -2,7 +2,7 @@ import numpy as np
 
 
 def fileReader(text):
-    filename = "./Futoshiki//FutoshikiTestFiles/" + text
+    filename = "./FutoshikiTestFiles/" + text
     lines, matrix, cons = [], [], []
     with open(filename) as f:
         lines.extend(f.readlines())
