@@ -4,4 +4,4 @@ python:
   - "3.6"
 
 script:
-  - python FCH.py
+  - python SBTH.py

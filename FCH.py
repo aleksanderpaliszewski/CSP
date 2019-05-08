@@ -35,8 +35,8 @@ def recFCH(matrix, cons, row, col, minus, max):
     consItem = checkCons(matrix, cons, row, col)
     consItem = consItem[minus:]
 
-    if returns % 20000 == 0 and returns != 0:
-        print(returns)
+    # if returns % 20000 == 0 and returns != 0:
+    #     print(returns)
 
     if flag:
         return

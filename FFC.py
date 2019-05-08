@@ -1,5 +1,7 @@
 import time
 import os
+import itertools
+
 from fileReader import fileReader
 from futoConstraints import checkCons
 from matrices import valuesInMatrix, findEmpty
@@ -68,6 +70,7 @@ def recFC(matrix, valM, cons, row, col, minus):
 
 def FCStart():
     entries = sorted(os.listdir('./FutoshikiTestFiles'))
+    print(entries)
     for entry in entries:
         global returns
         setCounter()
