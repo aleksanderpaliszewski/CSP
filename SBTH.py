@@ -84,7 +84,7 @@ def recFCH(matrix, valM, cons, row, col, minus, max):
 
 
 def BT():
-    entries = sorted(os.listdir('/Users/aleksanderpaliszewski/Desktop/SI/Lab2/Skyscrapper'))
+    entries = sorted(os.listdir('./SkyTestFiles'))
     for entry in entries:
         global returns
         setCounter()
